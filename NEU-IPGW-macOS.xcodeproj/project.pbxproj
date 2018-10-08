@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A998701216BC64A002D8669 /* HelperAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A998700216BC64A002D8669 /* HelperAppDelegate.swift */; };
+		8A998703216BC64B002D8669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A998702216BC64B002D8669 /* Assets.xcassets */; };
+		8A998706216BC64B002D8669 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A998704216BC64B002D8669 /* MainMenu.xib */; };
+		8A99870D216BCA25002D8669 /* NEU-IPGW-macOS-LaunchHelper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A9986FE216BC649002D8669 /* NEU-IPGW-macOS-LaunchHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8AE575A72166817B0084725A /* AboutWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE575A52166817B0084725A /* AboutWindow.swift */; };
+		8AE575A82166817B0084725A /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AE575A62166817B0084725A /* AboutWindow.xib */; };
+		8AE575AD216741CB0084725A /* PreferenceWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE575AB216741CB0084725A /* PreferenceWindow.swift */; };
+		8AE575AE216741CB0084725A /* PreferenceWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AE575AC216741CB0084725A /* PreferenceWindow.xib */; };
+		8AF7740A216544300019841A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF77409216544300019841A /* AppDelegate.swift */; };
+		8AF7740C216544310019841A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF7740B216544310019841A /* Assets.xcassets */; };
+		8AF7740F216544310019841A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AF7740D216544310019841A /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8A99870C216BC9FE002D8669 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				8A99870D216BCA25002D8669 /* NEU-IPGW-macOS-LaunchHelper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8A9986FE216BC649002D8669 /* NEU-IPGW-macOS-LaunchHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NEU-IPGW-macOS-LaunchHelper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A998700216BC64A002D8669 /* HelperAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperAppDelegate.swift; sourceTree = "<group>"; };
+		8A998702216BC64B002D8669 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A998705216BC64B002D8669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8A998707216BC64B002D8669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A998708216BC64B002D8669 /* NEU_IPGW_macOS_LaunchHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NEU_IPGW_macOS_LaunchHelper.entitlements; sourceTree = "<group>"; };
+		8AC6791C216B3E2900A54E2B /* NEU-IPGW-macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "NEU-IPGW-macOS.entitlements"; sourceTree = "<group>"; };
+		8AE575A52166817B0084725A /* AboutWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutWindow.swift; sourceTree = "<group>"; };
+		8AE575A62166817B0084725A /* AboutWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutWindow.xib; sourceTree = "<group>"; };
+		8AE575AB216741CB0084725A /* PreferenceWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceWindow.swift; sourceTree = "<group>"; };
+		8AE575AC216741CB0084725A /* PreferenceWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferenceWindow.xib; sourceTree = "<group>"; };
+		8AE9E4BA216BD7620036651E /* NEU-IPGW-macOS-LaunchHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "NEU-IPGW-macOS-LaunchHelper.entitlements"; sourceTree = "<group>"; };
+		8AF77406216544300019841A /* NEU-IPGW-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NEU-IPGW-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AF77409216544300019841A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8AF7740B216544310019841A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AF7740E216544310019841A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8AF77410216544310019841A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AF77411216544310019841A /* NEU_IPGW_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NEU_IPGW_macOS.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A9986FB216BC649002D8669 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF77403216544300019841A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A9986FF216BC64A002D8669 /* NEU-IPGW-macOS-LaunchHelper */ = {
+			isa = PBXGroup;
+			children = (
+				8AE9E4BA216BD7620036651E /* NEU-IPGW-macOS-LaunchHelper.entitlements */,
+				8A998700216BC64A002D8669 /* HelperAppDelegate.swift */,
+				8A998702216BC64B002D8669 /* Assets.xcassets */,
+				8A998704216BC64B002D8669 /* MainMenu.xib */,
+				8A998707216BC64B002D8669 /* Info.plist */,
+				8A998708216BC64B002D8669 /* NEU_IPGW_macOS_LaunchHelper.entitlements */,
+			);
+			path = "NEU-IPGW-macOS-LaunchHelper";
+			sourceTree = "<group>";
+		};
+		8AF773FD216544300019841A = {
+			isa = PBXGroup;
+			children = (
+				8AF77408216544300019841A /* NEU-IPGW-macOS */,
+				8A9986FF216BC64A002D8669 /* NEU-IPGW-macOS-LaunchHelper */,
+				8AF77407216544300019841A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8AF77407216544300019841A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AF77406216544300019841A /* NEU-IPGW-macOS.app */,
+				8A9986FE216BC649002D8669 /* NEU-IPGW-macOS-LaunchHelper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AF77408216544300019841A /* NEU-IPGW-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				8AC6791C216B3E2900A54E2B /* NEU-IPGW-macOS.entitlements */,
+				8AF77409216544300019841A /* AppDelegate.swift */,
+				8AE575A52166817B0084725A /* AboutWindow.swift */,
+				8AE575A62166817B0084725A /* AboutWindow.xib */,
+				8AF7740B216544310019841A /* Assets.xcassets */,
+				8AF7740D216544310019841A /* MainMenu.xib */,
+				8AF77410216544310019841A /* Info.plist */,
+				8AF77411216544310019841A /* NEU_IPGW_macOS.entitlements */,
+				8AE575AB216741CB0084725A /* PreferenceWindow.swift */,
+				8AE575AC216741CB0084725A /* PreferenceWindow.xib */,
+			);
+			path = "NEU-IPGW-macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A9986FD216BC649002D8669 /* NEU-IPGW-macOS-LaunchHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A998709216BC64B002D8669 /* Build configuration list for PBXNativeTarget "NEU-IPGW-macOS-LaunchHelper" */;
+			buildPhases = (
+				8A9986FA216BC649002D8669 /* Sources */,
+				8A9986FB216BC649002D8669 /* Frameworks */,
+				8A9986FC216BC649002D8669 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NEU-IPGW-macOS-LaunchHelper";
+			productName = "NEU-IPGW-macOS-LaunchHelper";
+			productReference = 8A9986FE216BC649002D8669 /* NEU-IPGW-macOS-LaunchHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8AF77405216544300019841A /* NEU-IPGW-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AF77414216544310019841A /* Build configuration list for PBXNativeTarget "NEU-IPGW-macOS" */;
+			buildPhases = (
+				8AF77402216544300019841A /* Sources */,
+				8AF77403216544300019841A /* Frameworks */,
+				8AF77404216544300019841A /* Resources */,
+				8A8D5B7621662C56005055E3 /* ShellScript */,
+				8A99870C216BC9FE002D8669 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NEU-IPGW-macOS";
+			productName = "NEU-IPGW-macOS";
+			productReference = 8AF77406216544300019841A /* NEU-IPGW-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8AF773FE216544300019841A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Haizs Chen";
+				TargetAttributes = {
+					8A9986FD216BC649002D8669 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					8AF77405216544300019841A = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 8AF77401216544300019841A /* Build configuration list for PBXProject "NEU-IPGW-macOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8AF773FD216544300019841A;
+			productRefGroup = 8AF77407216544300019841A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8AF77405216544300019841A /* NEU-IPGW-macOS */,
+				8A9986FD216BC649002D8669 /* NEU-IPGW-macOS-LaunchHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A9986FC216BC649002D8669 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A998703216BC64B002D8669 /* Assets.xcassets in Resources */,
+				8A998706216BC64B002D8669 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF77404216544300019841A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AE575AE216741CB0084725A /* PreferenceWindow.xib in Resources */,
+				8AF7740C216544310019841A /* Assets.xcassets in Resources */,
+				8AF7740F216544310019841A /* MainMenu.xib in Resources */,
+				8AE575A82166817B0084725A /* AboutWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A8D5B7621662C56005055E3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A9986FA216BC649002D8669 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A998701216BC64A002D8669 /* HelperAppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF77402216544300019841A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AF7740A216544300019841A /* AppDelegate.swift in Sources */,
+				8AE575AD216741CB0084725A /* PreferenceWindow.swift in Sources */,
+				8AE575A72166817B0084725A /* AboutWindow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8A998704216BC64B002D8669 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A998705216BC64B002D8669 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		8AF7740D216544310019841A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AF7740E216544310019841A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A99870A216BC64B002D8669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "NEU-IPGW-macOS-LaunchHelper/NEU-IPGW-macOS-LaunchHelper.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "NEU-IPGW-macOS-LaunchHelper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haizs.NEU-IPGW-macOS-LaunchHelper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		8A99870B216BC64B002D8669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "NEU-IPGW-macOS-LaunchHelper/NEU-IPGW-macOS-LaunchHelper.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "NEU-IPGW-macOS-LaunchHelper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haizs.NEU-IPGW-macOS-LaunchHelper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		8AF77412216544310019841A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8AF77413216544310019841A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		8AF77415216544310019841A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "NEU-IPGW-macOS/NEU-IPGW-macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "NEU-IPGW-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haizs.NEU-IPGW-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		8AF77416216544310019841A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "NEU-IPGW-macOS/NEU-IPGW-macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "NEU-IPGW-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haizs.NEU-IPGW-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A998709216BC64B002D8669 /* Build configuration list for PBXNativeTarget "NEU-IPGW-macOS-LaunchHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A99870A216BC64B002D8669 /* Debug */,
+				8A99870B216BC64B002D8669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AF77401216544300019841A /* Build configuration list for PBXProject "NEU-IPGW-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AF77412216544310019841A /* Debug */,
+				8AF77413216544310019841A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AF77414216544310019841A /* Build configuration list for PBXNativeTarget "NEU-IPGW-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AF77415216544310019841A /* Debug */,
+				8AF77416216544310019841A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8AF773FE216544300019841A /* Project object */;
+}
