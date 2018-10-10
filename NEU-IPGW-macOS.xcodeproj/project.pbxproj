@@ -39,7 +39,6 @@
 		8A998702216BC64B002D8669 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A998705216BC64B002D8669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		8A998707216BC64B002D8669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A998708216BC64B002D8669 /* NEU_IPGW_macOS_LaunchHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NEU_IPGW_macOS_LaunchHelper.entitlements; sourceTree = "<group>"; };
 		8AC6791C216B3E2900A54E2B /* NEU-IPGW-macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "NEU-IPGW-macOS.entitlements"; sourceTree = "<group>"; };
 		8AE575A52166817B0084725A /* AboutWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutWindow.swift; sourceTree = "<group>"; };
 		8AE575A62166817B0084725A /* AboutWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutWindow.xib; sourceTree = "<group>"; };
@@ -51,7 +50,6 @@
 		8AF7740B216544310019841A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AF7740E216544310019841A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		8AF77410216544310019841A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8AF77411216544310019841A /* NEU_IPGW_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NEU_IPGW_macOS.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +78,6 @@
 				8A998702216BC64B002D8669 /* Assets.xcassets */,
 				8A998704216BC64B002D8669 /* MainMenu.xib */,
 				8A998707216BC64B002D8669 /* Info.plist */,
-				8A998708216BC64B002D8669 /* NEU_IPGW_macOS_LaunchHelper.entitlements */,
 			);
 			path = "NEU-IPGW-macOS-LaunchHelper";
 			sourceTree = "<group>";
@@ -113,7 +110,6 @@
 				8AF7740B216544310019841A /* Assets.xcassets */,
 				8AF7740D216544310019841A /* MainMenu.xib */,
 				8AF77410216544310019841A /* Info.plist */,
-				8AF77411216544310019841A /* NEU_IPGW_macOS.entitlements */,
 				8AE575AB216741CB0084725A /* PreferenceWindow.swift */,
 				8AE575AC216741CB0084725A /* PreferenceWindow.xib */,
 			);
