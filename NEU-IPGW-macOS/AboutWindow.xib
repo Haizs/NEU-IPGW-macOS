@@ -22,29 +22,29 @@
                 <rect key="frame" x="0.0" y="0.0" width="270" height="120"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iLP-bA-Y6T">
-                        <rect key="frame" x="39" y="67" width="193" height="53"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="NEU-IPGW" id="rLc-L8-PYN">
-                            <font key="font" size="36" name="NeonAbsoluteSansRegular"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zlB-k3-CGK">
-                        <rect key="frame" x="78" y="48" width="114" height="23"/>
+                        <rect key="frame" x="78" y="50" width="114" height="19"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" title="Version 0.0.0" id="iCM-IJ-Wme">
-                            <font key="font" size="14" name="SauceCodeProNerdFontComplete-Regular"/>
+                            <font key="font" size="14" name="PTMono-Regular"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yox-CG-Zth">
-                        <rect key="frame" x="88" y="10" width="94" height="30"/>
+                        <rect key="frame" x="84" y="18" width="101" height="24"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="海之树·2018 GitHub.com/Haizs" id="x8o-qz-abC">
-                            <font key="font" size="11" name="MYuppy-Bold-DDC-MYuppy-Bold-DDC"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="海之树 · 2018 GitHub.com/Haizs" id="x8o-qz-abC">
+                            <font key="font" size="11" name="Klee-Demibold"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iLP-bA-Y6T">
+                        <rect key="frame" x="50" y="60" width="170" height="60"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="NEU-IPGW" id="rLc-L8-PYN">
+                            <font key="font" size="42" name="NanumBrush"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
