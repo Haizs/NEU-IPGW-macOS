@@ -7,6 +7,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="AboutWindow" customModule="NEU_IPGW_macOS" customModuleProvider="target">
             <connections>
+                <outlet property="versionField" destination="zlB-k3-CGK" id="YeV-lw-ie8"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -33,7 +34,7 @@
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zlB-k3-CGK">
                         <rect key="frame" x="78" y="48" width="114" height="23"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="Version 0.1.0" id="iCM-IJ-Wme">
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="Version 0.0.0" id="iCM-IJ-Wme">
                             <font key="font" size="14" name="SauceCodeProNerdFontComplete-Regular"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>

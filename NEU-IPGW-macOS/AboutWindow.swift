@@ -10,12 +10,17 @@ import Cocoa
 
 class AboutWindow: NSWindowController {
 
+    @IBOutlet weak var versionField: NSTextField!
+
     override var windowNibName: String! {
         return "AboutWindow"
     }
 
     override func windowDidLoad() {
         super.windowDidLoad()
+
+        let appVersion = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String ?? "Version 0.0.0"
+        versionField.stringValue = "Version \(appVersion)"
     }
 
 }
