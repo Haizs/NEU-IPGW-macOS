@@ -58,7 +58,10 @@ class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDele
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.httpBody = data
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+        request.setValue("Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:65.0) Gecko/20100101 Firefox/65.0", forHTTPHeaderField: "User-Agent")
+        let config: URLSessionConfiguration = URLSessionConfiguration.default
+        let session: URLSession = URLSession.init(configuration: config, delegate: self as? URLSessionDelegate, delegateQueue: OperationQueue.main)
+        let task = session.dataTask(with: request) { data, response, error in
             if let error = error {
                 self.sendNotification(title: "Error", body: error.localizedDescription)
                 return

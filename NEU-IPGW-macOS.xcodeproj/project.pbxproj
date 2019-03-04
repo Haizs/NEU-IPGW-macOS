@@ -446,6 +446,7 @@
 				CODE_SIGN_ENTITLEMENTS = "NEU-IPGW-macOS/NEU-IPGW-macOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8SW5PPR6ZZ;
 				INFOPLIST_FILE = "NEU-IPGW-macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -464,6 +465,7 @@
 				CODE_SIGN_ENTITLEMENTS = "NEU-IPGW-macOS/NEU-IPGW-macOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8SW5PPR6ZZ;
 				INFOPLIST_FILE = "NEU-IPGW-macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
