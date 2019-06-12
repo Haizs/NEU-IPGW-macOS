@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A75F2E722AAAD5B001BFABD /* IPGWHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A75F2E622AAAD5B001BFABD /* IPGWHelper.swift */; };
 		8A998701216BC64A002D8669 /* HelperAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A998700216BC64A002D8669 /* HelperAppDelegate.swift */; };
 		8A998703216BC64B002D8669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A998702216BC64B002D8669 /* Assets.xcassets */; };
 		8A998706216BC64B002D8669 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A998704216BC64B002D8669 /* MainMenu.xib */; };
@@ -34,6 +35,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8A75F2E622AAAD5B001BFABD /* IPGWHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPGWHelper.swift; sourceTree = "<group>"; };
 		8A9986FE216BC649002D8669 /* NEU-IPGW-macOS-LaunchHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NEU-IPGW-macOS-LaunchHelper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A998700216BC64A002D8669 /* HelperAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperAppDelegate.swift; sourceTree = "<group>"; };
 		8A998702216BC64B002D8669 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				8AF77410216544310019841A /* Info.plist */,
 				8AE575AB216741CB0084725A /* PreferenceWindow.swift */,
 				8AE575AC216741CB0084725A /* PreferenceWindow.xib */,
+				8A75F2E622AAAD5B001BFABD /* IPGWHelper.swift */,
 			);
 			path = "NEU-IPGW-macOS";
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			files = (
 				8AF7740A216544300019841A /* AppDelegate.swift in Sources */,
 				8AE575AD216741CB0084725A /* PreferenceWindow.swift in Sources */,
+				8A75F2E722AAAD5B001BFABD /* IPGWHelper.swift in Sources */,
 				8AE575A72166817B0084725A /* AboutWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

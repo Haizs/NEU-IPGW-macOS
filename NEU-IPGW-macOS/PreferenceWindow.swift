@@ -40,6 +40,7 @@ class PreferenceWindow: NSWindowController, NSWindowDelegate {
         defaults.set(usernameField.stringValue, forKey: "username")
         defaults.set(passwordField.stringValue, forKey: "password")
         defaults.set(autoLaunchCheckbox.stringValue, forKey: "autoLaunch")
+        IPGWHelper.shared.reset()
     }
 
 }
