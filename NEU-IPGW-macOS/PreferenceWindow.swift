@@ -10,10 +10,9 @@ import Cocoa
 import ServiceManagement
 
 class PreferenceWindow: NSWindowController, NSWindowDelegate {
-
-    @IBOutlet weak var usernameField: NSTextField!
-    @IBOutlet weak var passwordField: NSSecureTextField!
-    @IBOutlet weak var autoLaunchCheckbox: NSButton!
+    @IBOutlet var usernameField: NSTextField!
+    @IBOutlet var passwordField: NSSecureTextField!
+    @IBOutlet var autoLaunchCheckbox: NSButton!
 
     @IBAction func toggleAutoLaunch(_ sender: NSButton) {
         let helperBundleName = "com.haizs.NEU-IPGW-macOS-LaunchHelper"
@@ -27,7 +26,7 @@ class PreferenceWindow: NSWindowController, NSWindowDelegate {
 
     override func windowDidLoad() {
         super.windowDidLoad()
-        self.window?.delegate = self
+        window?.delegate = self
 
         let defaults = UserDefaults.standard
         usernameField.stringValue = defaults.string(forKey: "username") ?? ""
@@ -35,12 +34,11 @@ class PreferenceWindow: NSWindowController, NSWindowDelegate {
         autoLaunchCheckbox.stringValue = defaults.string(forKey: "autoLaunch") ?? ""
     }
 
-    func windowWillClose(_ notification: Notification) {
+    func windowWillClose(_: Notification) {
         let defaults = UserDefaults.standard
         defaults.set(usernameField.stringValue, forKey: "username")
         defaults.set(passwordField.stringValue, forKey: "password")
         defaults.set(autoLaunchCheckbox.stringValue, forKey: "autoLaunch")
         IPGWHelper.shared.reset()
     }
-
 }

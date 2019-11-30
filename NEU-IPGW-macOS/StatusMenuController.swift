@@ -9,7 +9,6 @@
 import Cocoa
 
 class StatusMenuController: NSObject {
-
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
 
     override func awakeFromNib() {
@@ -34,20 +33,15 @@ class StatusMenuController: NSObject {
         statusItem.menu = menu
     }
 
-    @objc func loginClicked(_ sender: AnyObject) {
+    @objc func loginClicked(_: AnyObject) {}
 
-    }
+    @objc func logoutClicked(_: AnyObject) {}
 
-    @objc func logoutClicked(_ sender: AnyObject) {
-
-    }
-
-    @objc func issueClicked(_ sender: AnyObject) {
+    @objc func issueClicked(_: AnyObject) {
         if let url = URL(string: "https://github.com/Haizs/NEU-IPGW-macOS/issues") {
             NSWorkspace.shared.open(url)
         }
     }
 
-    @objc func aboutClicked(_ sender: AnyObject) {
-    }
+    @objc func aboutClicked(_: AnyObject) {}
 }

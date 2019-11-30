@@ -10,8 +10,7 @@ import Cocoa
 
 @NSApplicationMain
 class HelperAppDelegate: NSObject, NSApplicationDelegate {
-
-    func applicationDidFinishLaunching(_ aNotification: Notification) {
+    func applicationDidFinishLaunching(_: Notification) {
         // Insert code here to initialize your application
         let runningApps = NSWorkspace.shared.runningApplications
         let isRunning = runningApps.contains {
@@ -19,7 +18,7 @@ class HelperAppDelegate: NSObject, NSApplicationDelegate {
         }
         if !isRunning {
             var path = Bundle.main.bundlePath as NSString
-            for _ in 1...4 {
+            for _ in 1 ... 4 {
                 path = path.deletingLastPathComponent as NSString
             }
             NSWorkspace.shared.launchApplication(path as String)
@@ -27,8 +26,7 @@ class HelperAppDelegate: NSObject, NSApplicationDelegate {
         NSApp.terminate(nil)
     }
 
-    func applicationWillTerminate(_ aNotification: Notification) {
+    func applicationWillTerminate(_: Notification) {
         // Insert code here to tear down your application
     }
-
 }
